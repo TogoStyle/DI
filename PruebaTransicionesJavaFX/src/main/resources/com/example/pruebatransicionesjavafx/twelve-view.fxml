@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pruebatransicionesjavafx.HelloController">
+   <children>
+      <Button fx:id="avanzaButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClick" text="Avanza" />
+      <Button fx:id="transition" layoutX="142.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClickTransition" text="Transicion" />
+      <Button fx:id="goBack" layoutX="524.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClickBack" text="GoBack" />
+      <Button fx:id="rotate" layoutX="387.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClickRotate" text="Rotate" />
+      <ImageView fx:id="background" fitHeight="351.0" fitWidth="608.0" layoutX="-4.0" layoutY="52.0">
+         <image>
+            <Image url="@fondo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="twelve" fitHeight="175.0" fitWidth="154.0" layoutX="30.0" layoutY="211.0">
+         <image>
+            <Image url="@12.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rot" fitHeight="175.0" fitWidth="154.0" layoutX="30.0" layoutY="186.0">
+         <image>
+            <Image url="@rotate.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
